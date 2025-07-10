@@ -1,0 +1,28 @@
+.aside-container {
+  width: 16rem;
+  min-height: 100vh;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.aside-link {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background: #1f2937;
+  font-size: 1.2rem;
+  color: #facc15;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.aside-link:hover {
+  box-shadow: 4px 4px #ffbb00;
+  background-color: #752d1b1a;
+  transform: translate(4px);
+}
