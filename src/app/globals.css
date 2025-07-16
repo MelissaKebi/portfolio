@@ -27,3 +27,7 @@ body {
   flex-direction: column;
   background-color: #111;
 }
+
+.border {
+  margin: auto;
+}

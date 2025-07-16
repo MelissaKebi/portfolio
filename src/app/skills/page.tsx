@@ -61,13 +61,15 @@ export default function Skills() {
         <h3 className="text-2xl md:text-3xl font-bold mb-8 text-white">
           What tools am I working right now?
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-4 md:items-start md:text-left md:text-xs">
           {skills.map((skill, index) => (
             <div
               key={index}
               className="flex items-center gap-2 p-3 bg-gray-800 rounded-md shadow hover:scale-105 transition"
             >
-              <div className="text-2xl">{skill.icon}</div>
+              <div className="text-2xl md:text-left md:text-xs">
+                {skill.icon}
+              </div>
               <span>{skill.name}</span>
             </div>
           ))}

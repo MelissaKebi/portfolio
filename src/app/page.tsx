@@ -5,10 +5,21 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="h-screen w-screen flex bg-[#111] text-white px-4">
-      <div className="flex-1 flex items-center justify-center px-4">
-        <div className="max-w-4xl space-y-4  flex-col-reverse md:flex-row items-center justify-between gap-10">
-          <div className="flex-1 space-y-4 text-center md:text-left">
+    <div className="border">
+      <section className="min-h-screen w-full bg-[#111] text-white px-6 py-12 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
+        {/* 📱 تصویر در بالا در موبایل، در راست در دسکتاپ */}
+        <div className="w-40 h-40 md:w-60 md:h-60 rounded-full border-4 border-yellow-500 overflow-hidden mb-10 mt-6 md:mb-0 md:order-2 ">
+          <Image
+            src="/Profilefoto.jpg"
+            alt="Profilbild"
+            width={240}
+            height={240}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        <div className="flex-1 text-center md:text-left space-y-6 md:order-1">
+          <div className="space-y-4">
             <span className="bg-gray-800 text-yellow-400 px-3 py-1 rounded-full inline-block">
               Hi there 👋 My name is
             </span>
@@ -24,7 +35,7 @@ export default function Hero() {
               Weiterbildung course at DCI (Digital Career Institute)...
             </p>
           </div>
-          <div className="flex gap-4 text-2xl justify-center md:justify-start mt-4">
+          <div className="flex justify-center md:justify-start gap-4 text-2xl mt-4">
             <a
               href="https://linkedin.com/in/meli-ssa-a7474b274"
               target="_blank"
@@ -61,35 +72,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-
-        <div className="relative">
-          {/* Bild nur auf kleinen Bildschirmen (unter 768px), oben und zentriert */}
-          <div className="absolute top-4 left-1/2 -translate-x-1/2 w-40 h-40 md:hidden">
-            <div className="w-full h-full rounded-full border-4 border-yellow-500 overflow-hidden">
-              <Image
-                src="/Profilefoto.jpg"
-                alt="Profilbild"
-                width={160}
-                height={160}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-
-          {/* Bild nur auf mittleren und großen Bildschirmen (ab 768px), rechts positioniert */}
-          <div className="hidden md:flex md:justify-end md:items-start md:w-full md:h-auto">
-            <div className="w-60 h-60 rounded-full border-4 border-yellow-500 overflow-hidden">
-              <Image
-                src="/Profilefoto.jpg"
-                alt="Profilbild"
-                width={240}
-                height={240}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
