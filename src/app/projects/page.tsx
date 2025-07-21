@@ -4,6 +4,12 @@ import { link } from "fs";
 // app/components/Experience.tsx
 const experiences = [
   {
+    role: " FullStack-Project",
+    company: "DCI- Course",
+    description: "Next.js, React, MongoDB + Mongoose, JWT, Tailwind Css",
+    link: "https://be-final-project-opal.vercel.app/",
+  },
+  {
     role: " WeatherApp",
     company: "DCI- Course",
     description: "Html5, JavaScript, Css",
