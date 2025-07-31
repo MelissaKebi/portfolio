@@ -1,5 +1,6 @@
 // app/components/Skills.tsx
 "use client";
+import { link } from "fs";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -47,6 +48,7 @@ const Knowledge = [
     period: "Sep 2007 -April 2012",
     description:
       "Bachelor's degree in Computer Engineering, specialized in Software Engineering",
+    link: "/Diplom.pdf",
   },
 ];
 
