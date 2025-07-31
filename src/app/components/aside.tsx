@@ -5,7 +5,7 @@ import "../styles/aside.scss";
 
 const Aside = () => {
   return (
-    <div className="aside-container">
+    <div className="aside-container ">
       <Link className="aside-link" href="/">
         About Me
       </Link>

@@ -1,6 +1,5 @@
 // app/components/Skills.tsx
 "use client";
-import { link } from "fs";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -37,7 +36,7 @@ const Knowledge = [
   {
     role: "Web Developer",
     company: "DCI-(Digital Career Institute)",
-    period: "Sep-2024 - Present",
+    period: "Sep.2024 - Sep.2025",
     description:
       "Having successfully completed a full web development program, I am now well-prepared to begin my career as a Junior Web Developer",
     link: "https://digitalcareerinstitute.org/de/",
@@ -65,9 +64,9 @@ export default function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex items-center gap-2 p-3 bg-gray-800 rounded-md shadow hover:scale-105 transition break-words"
+              className="flex flex-col items-center justify-center text-center gap-2 p-3 bg-gray-800 rounded-md shadow hover:scale-105 transition"
             >
-              <div className="text-2xl min-w-[32px]">{skill.icon}</div>
+              <div className="text-3xl">{skill.icon}</div>
               <span className="text-sm sm:text-base leading-snug break-words">
                 {skill.name}
               </span>
