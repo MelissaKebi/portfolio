@@ -4,6 +4,12 @@ import { link } from "fs";
 // app/components/Experience.tsx
 const experiences = [
   {
+    role: " Final-Project",
+    company: "DCI- Course",
+    description: "Next.js, React, MongoDB + Mongoose, JWT, Tailwind Css",
+    link: "https://liefrik.vercel.app/",
+  },
+  {
     role: " FullStack-Project",
     company: "DCI- Course",
     description: "Next.js, React, MongoDB + Mongoose, JWT, Tailwind Css",
