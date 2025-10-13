@@ -35,12 +35,12 @@ const skills = [
 
 const Knowledge = [
   {
-    role: "Web Developer",
+    role: "Web and Software Developer",
     company: "DCI-(Digital Career Institute)",
     period: "Sep.2024 - Sep.2025",
     description:
       "Having successfully completed a full web development program, I am now well-prepared to begin my career as a Junior Web Developer",
-    link: "https://digitalcareerinstitute.org/de/",
+    link: "/Zertifikat_DCI.pdf",
   },
   {
     role: "Computer Software Engineering",
